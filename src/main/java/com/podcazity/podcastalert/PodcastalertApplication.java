@@ -1,5 +1,7 @@
 package com.podcazity.podcastalert;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -28,10 +30,14 @@ public class PodcastalertApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... arg0) throws Exception {
+		Date lastAct = new Date();
 		for(Podcast p : podcastService.findAll()){
-			downloadFeedService.downloadFile(p.getPodcastFeed(), p.getPodcastXmlFileName());
-			readFeed.LoadHandler(p.getPodcastReader());
-			readFeed.createTrack();
+			downloadFeedService.downloadFile(p.getPodcastFeed(), 
+					p.getPodcastXmlFileName());
+			readFeed.LoadHandler(p);
+			p.setTracks(readFeed.createTracks());
+			p.setPodcastLastAct(lastAct);
+			podcastService.save(p);
 		}
 	}
 	

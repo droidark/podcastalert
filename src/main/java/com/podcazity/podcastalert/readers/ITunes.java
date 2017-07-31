@@ -1,36 +1,58 @@
 package com.podcazity.podcastalert.readers;
 
-import java.util.List;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
+import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 
 public class ITunes extends Reader {
-
-	@Override
-	public List<Track> getTrackList() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public ITunes(Podcast podcast) {
+		super(podcast);
 	}
 
 	@Override
-	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-		// TODO Auto-generated method stub
+	public void startElement(String uri, String localName, String qName, 
+			Attributes attributes) throws SAXException {
+		if(qName.equalsIgnoreCase("item")){
+			track = new Track();
+        } else if(qName.equals("enclosure")){
+        	track.setTrackLocation(attributes.getValue("url"));
+        	track.setTrackDuration(Integer.parseInt(attributes.getValue("length")));
+        } else if(qName.equals("pubDate") && track != null) {
+        	date = true;
+        }
 		
-	}
-
-	@Override
-	public void endElement(String uri, String localName, String qName) throws SAXException {
-		// TODO Auto-generated method stub
+		else if(qName.equalsIgnoreCase("title") && track != null){
+            title = true;
+        }
 		
 	}
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		// TODO Auto-generated method stub
-		
+		if(title){
+            track.setTrackTitle((new String(ch, start, length)));
+            title = false;
+        } else if(date) {
+        	try {
+        		DateFormat formatter = 
+        				new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz", 
+        						Locale.ENGLISH);
+				Date pubDate = formatter.parse(new String(ch, start, length));
+				track.setTrackDate(pubDate);
+				date = false;
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+        }
 	}
 
 }

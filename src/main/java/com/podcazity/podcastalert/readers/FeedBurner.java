@@ -1,71 +1,61 @@
 package com.podcazity.podcastalert.readers;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
+import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 
 public class FeedBurner extends Reader {
 	
-	private List<Track> trackList;
-    private Track track;
-    
-    boolean bLength = false;
-    boolean bTimestamp = false;
-    boolean bSize = false;
-    boolean bTitle = false;
-    boolean bTrackNum = false;
-    boolean bFormat = false;
-    boolean bLocation = false;
-
-	@Override
-	public List<Track> getTrackList() {
-		return trackList;
+	public FeedBurner(Podcast podcast) {
+		super(podcast);
 	}
 
-	@Override
-	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-		if(qName.equalsIgnoreCase("item")){
-            track = new Track();
-            trackList = new ArrayList<Track>();
-        }
-        else if(qName.equalsIgnoreCase("itunes:duration")){
-            bLength = true;
-        }
-        else if(qName.equalsIgnoreCase("feedburner:origEnclosureLink")){
-            bLocation = true;
-        }
-        else if(qName.equalsIgnoreCase("title") && track != null){
-            bTitle = true;
-        }
-		
-	}
+	boolean location;
 
 	@Override
-	public void endElement(String uri, String localName, String qName) throws SAXException{
+	public void startElement(String uri, String localName, String qName, 
+			Attributes attributes) throws SAXException {
 		if(qName.equalsIgnoreCase("item")){
-            trackList.add(track);
+			track = new Track();
+        } else if(qName.equalsIgnoreCase("feedburner:origEnclosureLink")){
+        	location = true;
+        } else if(qName.equals("enclosure")){
+        	track.setTrackDuration(Integer.parseInt(attributes.getValue("length")));
+        } else if(qName.equals("pubDate") && track != null) {
+        	date = true;
+        } else if(qName.equalsIgnoreCase("title") && track != null){
+            title = true;
         }
 		
 	}
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException{
-		if(bLength){
-			System.out.println(new String(ch, start, length));
-//            track.setTrackDuration(Integer.parseInt(new String(ch, start, length)));
-            bLength = false;
-        }
-        else if(bTitle){
-            track.setTrackTitle((new String(ch, start, length).replaceAll("\\W", "")));
-            bTitle = false;
-        }
-        else if(bLocation){
-            track.setTrackLocation(new String(ch, start, length));
-            bLocation = false;
+		if(title){
+            track.setTrackTitle((new String(ch, start, length)));
+            title = false;
+        } else if(location) {
+        	track.setTrackLocation((new String(ch, start, length)));
+        	location = false;
+        } else if(date) {
+        	try {
+        		DateFormat formatter = 
+        				new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz", 
+        						Locale.ENGLISH);
+				Date pubDate = formatter.parse(new String(ch, start, length));
+				track.setTrackDate(pubDate);
+				date = false;
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
         }		
 	}
 	

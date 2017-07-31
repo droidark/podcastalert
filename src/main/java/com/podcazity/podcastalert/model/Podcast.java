@@ -3,6 +3,7 @@ package com.podcazity.podcastalert.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -111,7 +112,8 @@ public class Podcast {
 	public void setPodcastReader(String podcastReader) {
 		this.podcastReader = podcastReader;
 	}
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast")
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast", cascade = CascadeType.ALL)
 	public List<Track> getTracks() {
 		return tracks;
 	}
