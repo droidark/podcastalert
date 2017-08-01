@@ -18,6 +18,7 @@ public abstract class Reader extends DefaultHandler {
     boolean image;
     boolean trackNum;
     boolean date;
+    boolean link;
     
     List<Track> trackList = new ArrayList<Track>();
     Track track;

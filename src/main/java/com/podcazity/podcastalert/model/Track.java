@@ -25,6 +25,7 @@ public class Track {
 	private Integer trackTrackNum;
 	private Integer trackDuration;
 	private Date trackDate;
+	private String trackPage;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -107,5 +108,13 @@ public class Track {
 	}
 	public void setTrackDate(Date trackDate) {
 		this.trackDate = trackDate;
+	}
+	
+	@Column(name = "track_page")
+	public String getTrackPage() {
+		return trackPage;
+	}
+	public void setTrackPage(String trackPage) {
+		this.trackPage = trackPage;
 	}
 }

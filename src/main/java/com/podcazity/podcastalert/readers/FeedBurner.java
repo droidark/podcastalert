@@ -42,6 +42,9 @@ public class FeedBurner extends Reader {
 		if(title){
             track.setTrackTitle((new String(ch, start, length)));
             title = false;
+        } else if(link) {
+        	track.setTrackPage((new String(ch, start, length)));
+        	link = false;
         } else if(location) {
         	track.setTrackLocation((new String(ch, start, length)));
         	location = false;

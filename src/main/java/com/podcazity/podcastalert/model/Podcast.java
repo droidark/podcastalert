@@ -28,6 +28,8 @@ public class Podcast {
 	private Date podcastLastAct;
 	private String podcastXmlFileName;
 	private String podcastReader;
+	private String podcastTwitter;
+	private String podcastFacebook;
 	private List<Track> tracks;
 	
 	@Id
@@ -111,6 +113,22 @@ public class Podcast {
 	}
 	public void setPodcastReader(String podcastReader) {
 		this.podcastReader = podcastReader;
+	}
+	
+	@Column(name = "podcast_twitter")
+	public String getPodcastTwitter() {
+		return podcastTwitter;
+	}
+	public void setPodcastTwitter(String podcastTwitter) {
+		this.podcastTwitter = podcastTwitter;
+	}
+	
+	@Column(name = "podcast_facebook")
+	public String getPodcastFacebook() {
+		return podcastFacebook;
+	}
+	public void setPodcastFacebook(String podcastFacebook) {
+		this.podcastFacebook = podcastFacebook;
 	}
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast", cascade = CascadeType.ALL)

@@ -17,7 +17,7 @@ public class DownloadFeedServiceImpl implements DownloadFeedService {
 		try {
 			URL feedLocation = new URL(url);
 			ReadableByteChannel rbc = Channels.newChannel(feedLocation.openStream());
-			FileOutputStream fos = new FileOutputStream("C:\\virux\\" + filename);
+			FileOutputStream fos = new FileOutputStream("xml\\" + filename);
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 			fos.close();
 			rbc.close();

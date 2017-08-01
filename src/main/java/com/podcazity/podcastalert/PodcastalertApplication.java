@@ -11,6 +11,10 @@ import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.service.DownloadFeedService;
 import com.podcazity.podcastalert.service.PodcastService;
 import com.podcazity.podcastalert.service.ReadFeed;
+import com.podcazity.podcastalert.service.TwitterService;
+
+import facebook4j.Facebook;
+import facebook4j.FacebookFactory;
 
 @SpringBootApplication
 public class PodcastalertApplication implements CommandLineRunner{
@@ -23,6 +27,9 @@ public class PodcastalertApplication implements CommandLineRunner{
 	
 	@Autowired
 	private ReadFeed readFeed;
+	
+	@Autowired
+	private TwitterService twitterService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(PodcastalertApplication.class, args);
@@ -30,15 +37,20 @@ public class PodcastalertApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... arg0) throws Exception {
-		Date lastAct = new Date();
-		for(Podcast p : podcastService.findAll()){
-			downloadFeedService.downloadFile(p.getPodcastFeed(), 
-					p.getPodcastXmlFileName());
-			readFeed.LoadHandler(p);
-			p.setTracks(readFeed.createTracks());
-			p.setPodcastLastAct(lastAct);
-			podcastService.save(p);
-		}
+		Facebook facebook = new FacebookFactory().getInstance();
+		facebook.postStatusMessage("Hola");
+//		Date lastAct = new Date();
+//		for(Podcast p : podcastService.findAll()){
+//			if(p.getPodcastId() == 16) {
+//				downloadFeedService.downloadFile(p.getPodcastFeed(), 
+//						p.getPodcastXmlFileName());
+//				readFeed.LoadHandler(p);
+//				p.setTracks(readFeed.createTracks());
+//				p.setPodcastLastAct(lastAct);
+//				twitterService.sendTweet(p);
+////				podcastService.save(p);
+//			}
+//		}
 	}
 	
 

@@ -37,7 +37,7 @@ public class ReadFeedImpl implements ReadFeed{
 		List<Track> trackList = null;
 		try {
 			SAXParser saxParser = saxParserFactory.newSAXParser();
-			saxParser.parse(new File("C:\\virux\\" + podcast.getPodcastXmlFileName()), handler);
+			saxParser.parse(new File("xml\\" + podcast.getPodcastXmlFileName()), handler);
 			trackList = handler.getTrackList();
 		} catch (Exception e) {
 			e.printStackTrace();

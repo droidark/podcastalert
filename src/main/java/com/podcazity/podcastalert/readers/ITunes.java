@@ -28,9 +28,9 @@ public class ITunes extends Reader {
         	track.setTrackDuration(Integer.parseInt(attributes.getValue("length")));
         } else if(qName.equals("pubDate") && track != null) {
         	date = true;
-        }
-		
-		else if(qName.equalsIgnoreCase("title") && track != null){
+        } else if(qName.equals("link") && track != null) {
+        	link = true;
+        } else if(qName.equalsIgnoreCase("title") && track != null){
             title = true;
         }
 		
@@ -41,6 +41,9 @@ public class ITunes extends Reader {
 		if(title){
             track.setTrackTitle((new String(ch, start, length)));
             title = false;
+        } else if(link) {
+        	track.setTrackPage((new String(ch, start, length)));
+        	link = false;
         } else if(date) {
         	try {
         		DateFormat formatter = 
