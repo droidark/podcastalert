@@ -3,8 +3,8 @@ spring:
     hibernate:
       ddl-auto: update
       use-new-id-generator-mappings: true
-    show-sql: false
+    show-sql: true
   datasource:
-    url: jdbc:postgresql://[server]:[port]/[database]
-    username: [user]
-    password: [password]  
+    url: jdbc:postgresql://localhost:5433/podcazity
+    username: postgres
+    password: admin   
