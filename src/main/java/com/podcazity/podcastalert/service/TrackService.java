@@ -8,4 +8,5 @@ public interface TrackService {
 	Track save(Track track);
 	void delete(Track track);
 	List<Track> findAll();
+	List<Track> lastetTracks();
 }

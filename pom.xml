@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<twitter4j.version>4.0.6</twitter4j.version>
-		<facebook4j.version>2.4.10</facebook4j.version>
+		<restfb.version>1.43.0</restfb.version>
 	</properties>
 
 	<dependencies>
@@ -53,9 +53,9 @@
 			<version>${twitter4j.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.facebook4j</groupId>
-			<artifactId>facebook4j-core</artifactId>
-			<version>${facebook4j.version}</version>
+			<groupId>com.restfb</groupId>
+			<artifactId>restfb</artifactId>
+			<version>${restfb.version}</version>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2spanishfull.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Los Forasteros</title>
+	
+	<link>http://www.losforasteros.com</link>
+	<description>Podcast del programa Comics y Cultura Visual</description>
+	<lastBuildDate>Wed, 02 Aug 2017 15:33:08 +0000</lastBuildDate>
+	<language>es-ES</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.8.21</generator>
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/los_forasteros" /><feedburner:info uri="los_forasteros" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:copyright>2012 © Los Forasteros</media:copyright><media:thumbnail url="http://losforasteros.com/avatar_cd.jpg" /><media:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Arts/Visual Arts</media:category><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Games &amp; Hobbies/Hobbies</media:category><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">TV &amp; Film</media:category><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Comedy</media:category><itunes:owner><itunes:email>info@losforasteros.com</itunes:email><itunes:name>Los Forasteros</itunes:name></itunes:owner><itunes:author>Los Forasteros</itunes:author><itunes:explicit>no</itunes:explicit><itunes:image href="http://losforasteros.com/avatar_cd.jpg" /><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><itunes:subtitle>El programa de comics y cultura visual.</itunes:subtitle><itunes:summary>El programa de radio sobre comics y cultura visual que sucede todos los jueves al medio dia por losforasteros.com Conduce: Maricarmen García, Luis Gantus, Humberto Ramos, Leonardo Olea y Edgar Clement. ♥</itunes:summary><itunes:category text="Arts"><itunes:category text="Visual Arts" /></itunes:category><itunes:category text="Games &amp; Hobbies"><itunes:category text="Hobbies" /></itunes:category><itunes:category text="TV &amp; Film" /><itunes:category text="Comedy" /><feedburner:feedFlare href="https://add.my.yahoo.com/content?lg=es&amp;url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://eur.i1.yimg.com/eur.yimg.com/i/es/my/addto1.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.feedness.com/alta/http://feeds.feedburner.com/los_forasteros" src="http://www.feedness.com/ayuda/wp-content/square_b_sh_feed.gif">Subscribe with Feedness</feedburner:feedFlare><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/los_forasteros" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="//www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><feedburner:feedFlare href="http://www.plusmo.com/add?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://plusmo.com/res/graphics/fbplusmo.gif">Subscribe with Plusmo</feedburner:feedFlare><feedburner:feedFlare href="http://www.thefreedictionary.com/_/hp/AddRSS.aspx?http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://img.tfd.com/hp/addToTheFreeDictionary.gif">Subscribe with The Free Dictionary</feedburner:feedFlare><feedburner:feedFlare href="http://www.bitty.com/manual/?contenttype=rssfeed&amp;contentvalue=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.bitty.com/img/bittychicklet_91x17.gif">Subscribe with Bitty Browser</feedburner:feedFlare><feedburner:feedFlare href="http://www.live.com/?add=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://tkfiles.storage.msn.com/x1piYkpqHC_35nIp1gLE68-wvzLZO8iXl_JMledmJQXP-XTBOLfmQv4zhj4MhcWEJh_GtoBIiAl1Mjh-ndp9k47If7hTaFno0mxW9_i3p_5qQw">Subscribe with Live.com</feedburner:feedFlare><feedburner:feedFlare href="http://mix.excite.eu/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://image.excite.co.uk/mix/addtomix.gif">Subscribe with Excite MIX</feedburner:feedFlare><feedburner:feedFlare href="http://www.webwag.com/wwgthis.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.webwag.com/images/wwgthis.gif">Subscribe with Webwag</feedburner:feedFlare><feedburner:feedFlare href="http://www.podcastready.com/oneclick_bookmark.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.podcastready.com/images/podcastready_button.gif">Subscribe with Podcast Ready</feedburner:feedFlare><feedburner:feedFlare href="http://www.wikio.com/subscribe?url=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.wikio.com/shared/img/add2wikio.gif">Subscribe with Wikio</feedburner:feedFlare><feedburner:feedFlare href="http://www.dailyrotation.com/index.php?feed=http%3A%2F%2Ffeeds.feedburner.com%2Flos_forasteros" src="http://www.dailyrotation.com/rss-dr2.gif">Subscribe with Daily Rotation</feedburner:feedFlare><item>
+		<title>T3E24 • Nuestras andanzas en la Comic-Con (Agosto 01, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/dpK6OFZN0E4/</link>
+		<comments>http://www.losforasteros.com/2017/08/01/t3e24/#comments</comments>
+		<pubDate>Tue, 01 Aug 2017 22:07:19 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=975</guid>
+		<description><![CDATA[Temporada 3 • Episodio 24 • Nuestras andanzas en la Comic-Con (Agosto 01, 2017) ▶Escuchalo YA! Hoy hablaremos de nuestras andanzas en las diferentes convenciones que hemos asistido. Puede que haya sorpresas.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 24 • Nuestras andanzas en la Comic-Con (Agosto 01, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E24_2017_Ago01_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos de nuestras andanzas en las diferentes convenciones que hemos asistido. </p>
+<p>Puede que haya sorpresas.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/dpK6OFZN0E4" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/08/01/t3e24/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E24_2017_Ago01_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E24_2017_Ago01_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 24 • Nuestras andanzas en la Comic-Con (Agosto 01, 2017) ▶Escuchalo YA! Hoy hablaremos de nuestras andanzas en las diferentes convenciones que hemos asistido. Puede que haya sorpresas.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 24 • Nuestras andanzas en la Comic-Con (Agosto 01, 2017) ▶Escuchalo YA! Hoy hablaremos de nuestras andanzas en las diferentes convenciones que hemos asistido. Puede que haya sorpresas.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/08/01/t3e24/</feedburner:origLink></item>
+		<item>
+		<title>T3E23 • ¿Quieren que les cuente un cuento? (Julio 25, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/VHmu365mYo0/</link>
+		<comments>http://www.losforasteros.com/2017/07/25/t3e23/#comments</comments>
+		<pubDate>Tue, 25 Jul 2017 22:02:37 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=973</guid>
+		<description><![CDATA[Temporada 3 • Episodio 23 • ¿Quieren que les cuente un cuento? (Julio 25, 2017) ▶Escuchalo YA! Hoy hablaremos de historias detrás del cómic y para eso regresa el forajido Carlos Tron. Además hablaremos de la Comic-Con y de los nacos.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 23 • ¿Quieren que les cuente un cuento? (Julio 25, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E23_2017_Jul25_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos de historias detrás del cómic y para eso regresa el forajido Carlos Tron. Además hablaremos de la Comic-Con y de los nacos.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/VHmu365mYo0" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/07/25/t3e23/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E23_2017_Jul25_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E23_2017_Jul25_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 23 • ¿Quieren que les cuente un cuento? (Julio 25, 2017) ▶Escuchalo YA! Hoy hablaremos de historias detrás del cómic y para eso regresa el forajido Carlos Tron. Además hablaremos de la Comic-Con y de los nacos.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 23 • ¿Quieren que les cuente un cuento? (Julio 25, 2017) ▶Escuchalo YA! Hoy hablaremos de historias detrás del cómic y para eso regresa el forajido Carlos Tron. Además hablaremos de la Comic-Con y de los nacos.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/07/25/t3e23/</feedburner:origLink></item>
+		<item>
+		<title>T3E22 • Draw Break 2 (Julio 18, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/49wN0o5mbZ8/</link>
+		<comments>http://www.losforasteros.com/2017/07/18/t3e22/#comments</comments>
+		<pubDate>Tue, 18 Jul 2017 22:40:27 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=969</guid>
+		<description><![CDATA[Temporada 3 • Episodio 22 • Draw Break 2 (Julio 18, 2017) ▶Escuchalo YA! Hoy hablaremos del Draw Break y para eso nos acompaña Oscar Amador. Adémas regresa el forajido Carlos Tron.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 22 • Draw Break 2 (Julio 18, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E22_2017_Jul18_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos del Draw Break y para eso nos acompaña Oscar Amador.<br />
+Adémas regresa el forajido Carlos Tron.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/49wN0o5mbZ8" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/07/18/t3e22/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E22_2017_Jul18_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E22_2017_Jul18_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 22 • Draw Break 2 (Julio 18, 2017) ▶Escuchalo YA! Hoy hablaremos del Draw Break y para eso nos acompaña Oscar Amador. Adémas regresa el forajido Carlos Tron.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 22 • Draw Break 2 (Julio 18, 2017) ▶Escuchalo YA! Hoy hablaremos del Draw Break y para eso nos acompaña Oscar Amador. Adémas regresa el forajido Carlos Tron.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/07/18/t3e22/</feedburner:origLink></item>
+		<item>
+		<title>T3E21 • ¡Betteo! ¡Betteo! ¿Dónde estás que no te veo? (Julio 11, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/r9MC9Ij5MCw/</link>
+		<comments>http://www.losforasteros.com/2017/07/11/t3e21/#comments</comments>
+		<pubDate>Tue, 11 Jul 2017 22:03:25 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=965</guid>
+		<description><![CDATA[Temporada 3 • Episodio 21 • ¡Betteo! ¡Betteo! ¿Dónde estás que no te veo? (Julio 11, 2017) ▶Escuchalo YA! Hoy nos acompaña Patricio Betteo que acaba de salir de su hibernación, y aprovechamos paras a ver todo acerca de sus proyectos como uno de los mejores ilustradores del país, además hablaremos de Spider-Man Homecoming y &#8230;  <a class="more-link" href="http://www.losforasteros.com/2017/07/11/t3e21/">Continue reading</a>]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 21 • ¡Betteo! ¡Betteo! ¿Dónde estás que no te veo? (Julio 11, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E21_2017_Jul11_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy nos acompaña Patricio Betteo que acaba de salir de su hibernación, y aprovechamos paras a ver todo acerca de sus proyectos como uno de los mejores ilustradores del país, además hablaremos de Spider-Man Homecoming y su buen gusto por las mujeres.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/r9MC9Ij5MCw" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/07/11/t3e21/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E21_2017_Jul11_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E21_2017_Jul11_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 21 • ¡Betteo! ¡Betteo! ¿Dónde estás que no te veo? (Julio 11, 2017) ▶Escuchalo YA! Hoy nos acompaña Patricio Betteo que acaba de salir de su hibernación, y aprovechamos paras a ver todo acerca de sus proyectos como uno de los mejore</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 21 • ¡Betteo! ¡Betteo! ¿Dónde estás que no te veo? (Julio 11, 2017) ▶Escuchalo YA! Hoy nos acompaña Patricio Betteo que acaba de salir de su hibernación, y aprovechamos paras a ver todo acerca de sus proyectos como uno de los mejores ilustradores del país, además hablaremos de Spider-Man Homecoming y &amp;#8230; Continue reading</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/07/11/t3e21/</feedburner:origLink></item>
+		<item>
+		<title>T3E20 • Panini Cómics México (Julio 04, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/zDERx9C9mcE/</link>
+		<comments>http://www.losforasteros.com/2017/07/04/t3e20/#comments</comments>
+		<pubDate>Tue, 04 Jul 2017 22:24:35 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=962</guid>
+		<description><![CDATA[Temporada 3 • Episodio 20 • Panini Cómics México (Julio 04, 2017) ▶Escuchalo YA! Hoy nos acompaña Marilú de Panini Cómics México, hablaremos de sus proyectos, lanzamientos y todo relacionado con la editorial. Y tal vez haya algunas sorpresas.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 20 • Panini Cómics México (Julio 04, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E20_2017_Jul04_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy nos acompaña Marilú de Panini Cómics México, hablaremos de sus proyectos, lanzamientos y todo relacionado con la editorial.</p>
+<p>Y tal vez haya algunas sorpresas.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/zDERx9C9mcE" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/07/04/t3e20/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E20_2017_Jul04_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E20_2017_Jul04_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 20 • Panini Cómics México (Julio 04, 2017) ▶Escuchalo YA! Hoy nos acompaña Marilú de Panini Cómics México, hablaremos de sus proyectos, lanzamientos y todo relacionado con la editorial. Y tal vez haya algunas sorpresas.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 20 • Panini Cómics México (Julio 04, 2017) ▶Escuchalo YA! Hoy nos acompaña Marilú de Panini Cómics México, hablaremos de sus proyectos, lanzamientos y todo relacionado con la editorial. Y tal vez haya algunas sorpresas.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/07/04/t3e20/</feedburner:origLink></item>
+		<item>
+		<title>T3E19 • Un taco de ojo animado (Junio 27, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/qeyJciR2GGU/</link>
+		<comments>http://www.losforasteros.com/2017/06/27/t3e19/#comments</comments>
+		<pubDate>Tue, 27 Jun 2017 22:23:06 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=957</guid>
+		<description><![CDATA[Temporada 3 • Episodio 19 • Un taco de ojo animado (Junio 27, 2017) ▶Escuchalo YA! Hoy hablaremos del mundo de la animación aprovechando que se realizó el festival de Annecy en Francia, uno de los más importantes de este tema. José Iñesta, director de Pixelatl, la asociación dedicada a promover la creación y difusión &#8230;  <a class="more-link" href="http://www.losforasteros.com/2017/06/27/t3e19/">Continue reading</a>]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 19 • Un taco de ojo animado (Junio 27, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E19_2017_Jun27_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos del mundo de la animación aprovechando que se realizó el festival de Annecy en Francia, uno de los más importantes de este tema.</p>
+<p>José Iñesta, director de Pixelatl, la asociación dedicada a promover la creación y difusión de contenidos y narrativas multimedia, estará con nosotros para platicarnos de como va México en estos menesteres.</p>
+<p>Y tal vez habrá una sorpresa.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/qeyJciR2GGU" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/06/27/t3e19/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E19_2017_Jun27_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E19_2017_Jun27_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 19 • Un taco de ojo animado (Junio 27, 2017) ▶Escuchalo YA! Hoy hablaremos del mundo de la animación aprovechando que se realizó el festival de Annecy en Francia, uno de los más importantes de este tema. José Iñesta, director de Pix</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 19 • Un taco de ojo animado (Junio 27, 2017) ▶Escuchalo YA! Hoy hablaremos del mundo de la animación aprovechando que se realizó el festival de Annecy en Francia, uno de los más importantes de este tema. José Iñesta, director de Pixelatl, la asociación dedicada a promover la creación y difusión &amp;#8230; Continue reading</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/06/27/t3e19/</feedburner:origLink></item>
+		<item>
+		<title>T3E18 • Juguetes de trabajo (Junio 20, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/6UaRMOQHC_g/</link>
+		<comments>http://www.losforasteros.com/2017/06/20/t3e18/#comments</comments>
+		<pubDate>Tue, 20 Jun 2017 22:13:00 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=953</guid>
+		<description><![CDATA[Temporada 3 • Episodio 18 • Juguetes de trabajo (Junio 20, 2017) ▶Escuchalo YA! Hoy hablaremos acerca de las herramientas de trabajo que usamos para el día a día.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 18 • Juguetes de trabajo (Junio 20, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E18_2017_Jun20_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos acerca de las herramientas de trabajo que usamos para el día a día.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/6UaRMOQHC_g" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/06/20/t3e18/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E18_2017_Jun20_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E18_2017_Jun20_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 18 • Juguetes de trabajo (Junio 20, 2017) ▶Escuchalo YA! Hoy hablaremos acerca de las herramientas de trabajo que usamos para el día a día.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 18 • Juguetes de trabajo (Junio 20, 2017) ▶Escuchalo YA! Hoy hablaremos acerca de las herramientas de trabajo que usamos para el día a día.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/06/20/t3e18/</feedburner:origLink></item>
+		<item>
+		<title>T3E17 • Más allá de los superhéroes (Junio 13, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/JA4wCWD8hPA/</link>
+		<comments>http://www.losforasteros.com/2017/06/13/t3e17/#comments</comments>
+		<pubDate>Tue, 13 Jun 2017 22:22:10 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=948</guid>
+		<description><![CDATA[Temporada 3 • Episodio 17 • Más allá de los superhéroes (Junio 13, 2017) ▶Escuchalo YA! Hoy hablaremos de todas esas películas basadas en cómic pero que no tienen personajes con capitas.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 17 • Más allá de los superhéroes (Junio 13, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E17_2017_Jun13_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos de todas esas películas basadas en cómic pero que no tienen personajes con capitas.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/JA4wCWD8hPA" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/06/13/t3e17/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E17_2017_Jun13_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E17_2017_Jun13_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 17 • Más allá de los superhéroes (Junio 13, 2017) ▶Escuchalo YA! Hoy hablaremos de todas esas películas basadas en cómic pero que no tienen personajes con capitas.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 17 • Más allá de los superhéroes (Junio 13, 2017) ▶Escuchalo YA! Hoy hablaremos de todas esas películas basadas en cómic pero que no tienen personajes con capitas.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/06/13/t3e17/</feedburner:origLink></item>
+		<item>
+		<title>T3E16 • Maravilla de Forasteros (Junio 06, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/U03_VSUoFUA/</link>
+		<comments>http://www.losforasteros.com/2017/06/06/t3e16/#comments</comments>
+		<pubDate>Tue, 06 Jun 2017 22:20:04 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=945</guid>
+		<description><![CDATA[Temporada 3 • Episodio 16 • Maravilla de Forasteros (Junio 06, 2017) ▶Escuchalo YA! Hoy hablaremos de Wonder Woman y dicen las malas lenguas que Gantus tiene un anuncio importante que hacer.]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 16 • Maravilla de Forasteros (Junio 06, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E16_2017_Jun06_F.mp3">▶Escuchalo YA!</a></p>
+<p>Hoy hablaremos de Wonder Woman y dicen las malas lenguas que Gantus tiene un anuncio importante que hacer.</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/U03_VSUoFUA" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/06/06/t3e16/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E16_2017_Jun06_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E16_2017_Jun06_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 16 • Maravilla de Forasteros (Junio 06, 2017) ▶Escuchalo YA! Hoy hablaremos de Wonder Woman y dicen las malas lenguas que Gantus tiene un anuncio importante que hacer.</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 16 • Maravilla de Forasteros (Junio 06, 2017) ▶Escuchalo YA! Hoy hablaremos de Wonder Woman y dicen las malas lenguas que Gantus tiene un anuncio importante que hacer.</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/06/06/t3e16/</feedburner:origLink></item>
+		<item>
+		<title>T3E15 • #TodosSomosForasteros (Mayo 30, 2017)</title>
+		<link>http://feedproxy.google.com/~r/los_forasteros/~3/cjXezFbscow/</link>
+		<comments>http://www.losforasteros.com/2017/05/30/t3e15/#comments</comments>
+		<pubDate>Tue, 30 May 2017 22:17:26 +0000</pubDate>
+		<dc:creator>info@losforasteros.com (Los Forasteros)</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[Temporada 3]]></category>
+		<category><![CDATA[Temporadas]]></category>
+
+		<guid isPermaLink="false">http://www.losforasteros.com/?p=941</guid>
+		<description><![CDATA[Temporada 3 • Episodio 15 • #TodosSomosForasteros (Mayo 30, 2017) ▶Escuchalo YA! #TodosSomosForasteros]]></description>
+				<content:encoded><![CDATA[<p>Temporada 3 • Episodio 15 • #TodosSomosForasteros (Mayo 30, 2017)</p>
+<p><a href="http://archive.org/download/los_forasteros/T3E15_2017_May30_F.mp3">▶Escuchalo YA!</a></p>
+<p>#TodosSomosForasteros</p>
+<img src="http://feeds.feedburner.com/~r/los_forasteros/~4/cjXezFbscow" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>http://www.losforasteros.com/2017/05/30/t3e15/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://archive.org/download/los_forasteros/T3E15_2017_May30_F.mp3" length="0" type="audio/mpeg" />
+		<media:content url="http://archive.org/download/los_forasteros/T3E15_2017_May30_F.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>Temporada 3 • Episodio 15 • #TodosSomosForasteros (Mayo 30, 2017) ▶Escuchalo YA! #TodosSomosForasteros</itunes:subtitle><itunes:author>Los Forasteros</itunes:author><itunes:summary>Temporada 3 • Episodio 15 • #TodosSomosForasteros (Mayo 30, 2017) ▶Escuchalo YA! #TodosSomosForasteros</itunes:summary><itunes:keywords>forasteros,olea,ramos,clement,gantus,garcia,comics,comic,libros,humor</itunes:keywords><feedburner:origLink>http://www.losforasteros.com/2017/05/30/t3e15/</feedburner:origLink></item>
+	<copyright>2012 © Los Forasteros</copyright><media:credit role="author">Los Forasteros</media:credit><media:rating>nonadult</media:rating><media:description type="plain">El programa de comics y cultura visual.</media:description></channel>
+</rss>

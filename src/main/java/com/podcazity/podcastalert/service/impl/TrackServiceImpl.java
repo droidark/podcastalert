@@ -29,4 +29,10 @@ public class TrackServiceImpl implements TrackService{
 		return trackRepository.findAll();
 	}
 
+	@Override
+	public List<Track> lastetTracks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
