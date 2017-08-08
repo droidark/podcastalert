@@ -24,6 +24,8 @@
 		<java.version>1.8</java.version>
 		<twitter4j.version>4.0.6</twitter4j.version>
 		<restfb.version>1.43.0</restfb.version>
+		<commons.io.version>2.5</commons.io.version>
+		<commons.net.version>3.6</commons.net.version>
 	</properties>
 
 	<dependencies>
@@ -45,7 +47,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.5</version>
+			<version>${commons.io.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.twitter4j</groupId>
@@ -56,6 +58,11 @@
 			<groupId>com.restfb</groupId>
 			<artifactId>restfb</artifactId>
 			<version>${restfb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>${commons.net.version}</version>
 		</dependency>
 	</dependencies>
 

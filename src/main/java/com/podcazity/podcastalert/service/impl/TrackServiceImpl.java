@@ -1,13 +1,16 @@
 package com.podcazity.podcastalert.service.impl;
 
-import java.util.List;
-
 import javax.annotation.Resource;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import com.podcazity.podcastalert.model.Track;
 import com.podcazity.podcastalert.repository.TrackRepository;
 import com.podcazity.podcastalert.service.TrackService;
 
+@Service("trackService")
 public class TrackServiceImpl implements TrackService{
 	
 	@Resource
@@ -25,14 +28,10 @@ public class TrackServiceImpl implements TrackService{
 	}
 
 	@Override
-	public List<Track> findAll() {
-		return trackRepository.findAll();
+	public Page<Track> listAllByPage(Pageable pageable) {
+		return trackRepository.findAll(pageable);
 	}
 
-	@Override
-	public List<Track> lastetTracks() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
+	
 }

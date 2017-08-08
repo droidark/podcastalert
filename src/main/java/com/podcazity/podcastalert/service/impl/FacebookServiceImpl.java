@@ -33,7 +33,7 @@ public class FacebookServiceImpl implements FacebookService{
 				fbClient.publish(pageId + "/feed", FacebookType.class, 
 						Parameter.with(
 								"link", 
-								podcast.getTracks().get(i).getTrackPage()),
+								podcast.getTracks().get(i).getTrackLocation()),
 						Parameter.with(
 								"message", 
 								"#PodcastAlert " + 

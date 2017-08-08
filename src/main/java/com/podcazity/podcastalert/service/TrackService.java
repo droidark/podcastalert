@@ -1,12 +1,12 @@
 package com.podcazity.podcastalert.service;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import com.podcazity.podcastalert.model.Track;
 
 public interface TrackService {
 	Track save(Track track);
 	void delete(Track track);
-	List<Track> findAll();
-	List<Track> lastetTracks();
+	Page<Track> listAllByPage(Pageable pageable);
 }
