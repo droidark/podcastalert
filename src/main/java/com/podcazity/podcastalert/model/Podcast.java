@@ -30,6 +30,7 @@ public class Podcast {
 	private String podcastReader;
 	private String podcastTwitter;
 	private String podcastFacebook;
+	private String podcastName;
 	private List<Track> tracks;
 	
 	@Id
@@ -129,6 +130,14 @@ public class Podcast {
 	}
 	public void setPodcastFacebook(String podcastFacebook) {
 		this.podcastFacebook = podcastFacebook;
+	}
+	
+	@Column(name = "podcast_name")
+	public String getPodcastName() {
+		return podcastName;
+	}
+	public void setPodcastName(String podcastName) {
+		this.podcastName = podcastName;
 	}
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast", cascade = CascadeType.ALL)
