@@ -1,6 +1,7 @@
 package com.podcazity.podcastalert.model;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +20,7 @@ public class Podcaster {
 	private String podcasterUrl;
 	private String podcasterShortDescription;
 	private String podcasterAvatar;
-	private List<Podcast> podcasts;
+	private Set<Podcast> podcasts = new HashSet<>();
 	
 	
 	@Id
@@ -65,10 +66,10 @@ public class Podcaster {
 	}
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcaster")
-	public List<Podcast> getPodcasts() {
+	public Set<Podcast> getPodcasts() {
 		return podcasts;
 	}
-	public void setPodcasts(List<Podcast> podcasts) {
+	public void setPodcasts(Set<Podcast> podcasts) {
 		this.podcasts = podcasts;
 	}
 }

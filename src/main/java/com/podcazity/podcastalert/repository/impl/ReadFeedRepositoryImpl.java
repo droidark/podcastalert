@@ -1,4 +1,4 @@
-package com.podcazity.podcastalert.service.impl;
+package com.podcazity.podcastalert.repository.impl;
 
 import java.io.File;
 import java.util.Set;
@@ -6,17 +6,17 @@ import java.util.Set;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 import com.podcazity.podcastalert.readers.FeedBurner;
 import com.podcazity.podcastalert.readers.ITunes;
 import com.podcazity.podcastalert.readers.Reader;
-import com.podcazity.podcastalert.service.ReadFeed;
+import com.podcazity.podcastalert.repository.ReadFeedRepository;
 
-@Service("readFeed")
-public class ReadFeedImpl implements ReadFeed{
+@Repository("readFeedRepository")
+public class ReadFeedRepositoryImpl implements ReadFeedRepository{
 
 	private Reader handler;
 	private Podcast podcast;

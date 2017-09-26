@@ -1,11 +1,11 @@
-package com.podcazity.podcastalert.service;
+package com.podcazity.podcastalert.repository;
 
 import java.util.Set;
 
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 
-public interface ReadFeed {
+public interface ReadFeedRepository {
 	void LoadHandler(Podcast podcast);
 	Set<Track> createTracks();
 }

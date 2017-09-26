@@ -1,7 +1,7 @@
 package com.podcazity.podcastalert.readers;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -20,7 +20,7 @@ public abstract class Reader extends DefaultHandler {
     boolean date;
     boolean link;
     
-    List<Track> trackList = new ArrayList<Track>();
+    Set<Track> trackList = new HashSet<Track>();
     Track track;
 	
 	Podcast podcast;
@@ -29,7 +29,7 @@ public abstract class Reader extends DefaultHandler {
 		this.podcast = podcast;
 	}
 	
-	public List<Track> getTrackList() {
+	public Set<Track> getTrackList() {
 		return trackList;
 	}
 	
@@ -38,7 +38,7 @@ public abstract class Reader extends DefaultHandler {
 	public void endElement(String uri, String localName, String qName) 
 			throws SAXException {
 		if(qName.equalsIgnoreCase("item") 
-				&& track.getTrackDate().after(podcast.getPodcastLastAct())){
+				&& track.getTrackDate().after(podcast.getPodcastLastAct())) {
 			track.setPodcast(podcast);
             trackList.add(track);
         }		

@@ -19,14 +19,14 @@ public class TwitterServiceImpl implements TwitterService{
 		try {
 			TwitterFactory factory = new TwitterFactory();
 			Twitter twitter = factory.getInstance();
-			for(int i = podcast.getTracks().size() - 1; i >= 0; i--) {
-				StatusUpdate status = new StatusUpdate("#PodcastAlert! " + 
-						podcast.getTracks().get(i).getTrackTitle() + " " + 
-						podcast.getTracks().get(i).getTrackLocation() + " " + 
-						podcast.getPodcastTwitter() + " ");
-//				status.setMedia(new File(podcast.getPodcastArtWork()));
-				twitter.updateStatus(status);
-			}
+//			for(int i = podcast.getTracks().size() - 1; i >= 0; i--) {
+//				StatusUpdate status = new StatusUpdate("#PodcastAlert! " + 
+//						podcast.getTracks().get(i).getTrackTitle() + " " + 
+//						podcast.getTracks().get(i).getTrackLocation() + " " + 
+//						podcast.getPodcastTwitter() + " ");
+////				status.setMedia(new File(podcast.getPodcastArtWork()));
+//				twitter.updateStatus(status);
+//			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		

@@ -1,7 +1,8 @@
 package com.podcazity.podcastalert.model;
 
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -31,7 +32,7 @@ public class Podcast {
 	private String podcastTwitter;
 	private String podcastFacebook;
 	private String podcastName;
-	private List<Track> tracks;
+	private Set<Track> tracks = new HashSet<>();
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -141,10 +142,10 @@ public class Podcast {
 	}
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast", cascade = CascadeType.ALL)
-	public List<Track> getTracks() {
+	public Set<Track> getTracks() {
 		return tracks;
 	}
-	public void setTracks(List<Track> tracks) {
+	public void setTracks(Set<Track> tracks) {
 		this.tracks = tracks;
 	}
 }
