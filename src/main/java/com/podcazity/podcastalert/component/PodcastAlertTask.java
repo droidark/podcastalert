@@ -50,7 +50,7 @@ public class PodcastAlertTask {
 				podcastRepository.save(p);
 			}
 		}
-		createXspfRepository.buildFile();
+//		createXspfRepository.buildFile();
 //		//uploadService.uploadFile();
 	}
 }
