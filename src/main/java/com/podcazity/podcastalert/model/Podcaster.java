@@ -22,7 +22,6 @@ public class Podcaster {
 	private String podcasterAvatar;
 	private Set<Podcast> podcasts = new HashSet<>();
 	
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "podcaster_id")

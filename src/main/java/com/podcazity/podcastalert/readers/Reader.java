@@ -40,7 +40,18 @@ public abstract class Reader extends DefaultHandler {
 		if(qName.equalsIgnoreCase("item") 
 				&& track.getTrackDate().after(podcast.getPodcastLastAct())) {
 			track.setPodcast(podcast);
-            trackList.add(track);
+            
+			boolean b = true;
+			for(Track t : trackList) {
+				if(t.getTrackLocation().equals(track.getTrackLocation())) {
+					b = false;
+				}
+			}
+			
+			if(b) {
+				trackList.add(track);
+			}
+			
         }		
 	}
 	

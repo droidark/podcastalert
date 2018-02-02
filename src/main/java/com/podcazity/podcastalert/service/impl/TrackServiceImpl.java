@@ -18,7 +18,10 @@ public class TrackServiceImpl implements TrackService{
 
 	@Override
 	public Track save(Track track) {
-		return trackRepository.save(track);
+		if(trackRepository.findBytrackLocation(track.getTrackLocation()) == null) {
+			return trackRepository.save(track);
+		}
+		return null;
 	}
 
 	@Override

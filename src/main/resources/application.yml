@@ -9,5 +9,5 @@ spring:
     show-sql: false
   datasource:
     url: jdbc:postgresql://localhost:5433/podcazity
-    username: [username]
-    password: [password]
+    username: postgres
+    password: admin

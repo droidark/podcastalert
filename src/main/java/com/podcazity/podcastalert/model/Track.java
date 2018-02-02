@@ -117,7 +117,6 @@ public class Track {
 	public void setTrackPage(String trackPage) {
 		this.trackPage = trackPage;
 	}
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -141,4 +140,6 @@ public class Track {
 			return false;
 		return true;
 	}
+	
+	
 }

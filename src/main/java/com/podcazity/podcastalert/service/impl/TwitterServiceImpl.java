@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.service.TwitterService;
 
-import twitter4j.StatusUpdate;
+//import twitter4j.StatusUpdate;
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
 
