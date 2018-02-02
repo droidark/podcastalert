@@ -8,6 +8,6 @@ spring:
       use-new-id-generator-mappings: true
     show-sql: false
   datasource:
-    url: jdbc:postgresql://localhost:5433/podcazity
-    username: postgres
-    password: admin
+    url: [url]
+    username: [user]
+    password: [pass]
