@@ -8,9 +8,9 @@ spring:
       use-new-id-generator-mappings: true
     show-sql: false
   datasource:
-    url: [url]
-    username: [username]
-    password: [password]
+    url: jdbc:postgresql://localhost:5432/podcazity
+    username: postgres
+    password: admin
 logging:
   level:
     org.springframework.web: ERROR
