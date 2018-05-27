@@ -4,7 +4,4 @@ images/*
 target/*
 images.rar
 queries.sql
-src/main/resources/application.yml
-src/main/resources/ftp.properties
-src/main/resources/restfb.properties
-src/main/resources/twitter4j.properties
+src/main/resources/*
