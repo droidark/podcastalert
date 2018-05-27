@@ -25,7 +25,7 @@ public class FacebookServiceImpl implements FacebookService{
 	@Override
 	public void publishLink(Podcast podcast) {
 		try {
-			fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_2_5);
+			fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_3_0);
 			
 //			for(int i = podcast.getTracks().size() - 1; i >= 0; i--) {
 //				fbClient.publish(pageId + "/feed", FacebookType.class, 

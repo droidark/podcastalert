@@ -8,6 +8,14 @@ spring:
       use-new-id-generator-mappings: true
     show-sql: false
   datasource:
-    url: jdbc:postgresql://localhost:5433/podcazity
+    url: jdbc:postgresql://localhost:5432/podcazity
     username: postgres
     password: admin
+logging:
+  level:
+    org.springframework.web: ERROR
+    net.virux: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: log/application.log

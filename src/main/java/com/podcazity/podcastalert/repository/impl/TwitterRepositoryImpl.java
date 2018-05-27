@@ -2,9 +2,9 @@ package com.podcazity.podcastalert.repository.impl;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
-
-//import java.io.File;
 
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
@@ -16,6 +16,8 @@ import twitter4j.TwitterFactory;
 
 @Repository("twitterRepository")
 public class TwitterRepositoryImpl implements TwitterRepository{
+	
+	private static final Logger logger = LoggerFactory.getLogger(TwitterRepositoryImpl.class);
 
 	@Override
 	public void sendTweet(Podcast podcast) {
@@ -24,11 +26,14 @@ public class TwitterRepositoryImpl implements TwitterRepository{
 			Twitter twitter = factory.getInstance();
 			
 			for(Track t : podcast.getTracks()) {
+				logger.info("Sending tweet: #PodcastAlert " + t.getTrackTitle() + " " 
+			+ t.getTrackPage() + " vía " + podcast.getPodcastTwitter());
 				StatusUpdate status = new StatusUpdate("#PodcastAlert " + 
 				t.getTrackTitle() + " " + 
-				t.getTrackLocation() + " vía " + 
+				t.getTrackPage() + " vía " + 
 				podcast.getPodcastTwitter() + " ");
-				status.setMedia(new File(podcast.getPodcastArtWork()));
+				// Put podcast conver in tweet
+				//status.setMedia(new File(podcast.getPodcastArtWork()));
 				twitter.updateStatus(status);
 			}
 		} catch (Exception e) {

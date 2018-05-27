@@ -1,0 +1,1325 @@
+                          _
+  ___   ____   _ _   ___ (_)  ___   ____   _ __   ____
+ / __\ / __ \ | '_ \/_  '| | / __\ / __ \ | '__\ / __ \
+| |   | |  | || | | | | || || |   | |  | || |  '| |  | |
+| |__ | |__| || | | | | || || |__ | |__| || |   | |__| |
+ \___\ \____/ |_| |_| |_||_| \___\ \____/ |_|   |  ___/
+                                                | |
+											    |_|
+2018-05-26 19:02:38 [main] INFO  c.p.p.PodcastalertApplication - Starting PodcastalertApplication on DESKTOP-5CV30MA with PID 7220 (C:\Users\Fozz\eclipse-workspace\podcastalert\target\classes started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:02:38 [main] INFO  c.p.p.PodcastalertApplication - No active profile set, falling back to default profiles: default
+2018-05-26 19:02:38 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42721fe: startup date [Sat May 26 19:02:38 CDT 2018]; root of context hierarchy
+2018-05-26 19:02:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:02:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:02:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-26 19:02:40 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-26 19:02:40 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-26 19:02:40 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-26 19:02:40 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-26 19:02:40 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-26 19:02:40 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61514735
+2018-05-26 19:02:41 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-26 19:02:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:02:41 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-26 19:02:41 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Getting all podcasts
+2018-05-26 19:02:42 [main] INFO  c.p.p.PodcastalertApplication - Started PodcastalertApplication in 3.727 seconds (JVM running for 4.572)
+2018-05-26 19:02:42 [main] INFO  c.p.p.PodcastalertApplication - #PodcastAlet proccess begings
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Los Inmamables feed
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Los Inmamables -> 0
+2018-05-26 19:02:42 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Comicverso feed
+2018-05-26 19:02:43 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:43 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Comicverso -> 0
+2018-05-26 19:02:43 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Freak Noob News feed
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Freak Noob News -> 0
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Comikaze feed
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Comikaze -> 0
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading D-Strip-Ando feed
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:02:45 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Cómic Manía feed
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Cómic Manía -> 0
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Los Forasteros feed
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Los Forasteros -> 0
+2018-05-26 19:02:46 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Nerdulería feed
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Nerdulería -> 0
+2018-05-26 19:02:47 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading La Cueva Del Nerd feed
+2018-05-26 19:02:48 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:48 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:02:48 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Atomix Podcast feed
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Atomix Podcast -> 0
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Sayonara Podcast feed
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:02:49 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading El FrikiPodcast feed
+2018-05-26 19:02:50 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:50 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:02:50 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Comic Geekos feed
+2018-05-26 19:02:51 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:51 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Comic Geekos -> 0
+2018-05-26 19:02:51 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading El Café Comiquero feed
+2018-05-26 19:02:52 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:52 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for El Café Comiquero -> 0
+2018-05-26 19:02:52 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Capitán Pada feed
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Capitán Pada -> 0
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Persona No Sekai feed
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Persona No Sekai -> 0
+2018-05-26 19:02:53 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading Desde Abajo feed
+2018-05-26 19:02:54 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:54 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for Desde Abajo -> 0
+2018-05-26 19:02:54 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading EngelCast Alive! feed
+2018-05-26 19:02:55 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:55 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:02:55 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Downloading El Pasquín feed
+2018-05-26 19:02:56 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Reading files
+2018-05-26 19:02:56 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - New tracks for El Pasquín -> 0
+2018-05-26 19:02:56 [pool-2-thread-1] INFO  c.p.p.PodcastalertApplication - Closing #PodcastAlert proccess
+
+2018-05-26 19:04:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-05-26 19:04:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42721fe: startup date [Sat May 26 19:02:38 CDT 2018]; root of context hierarchy
+2018-05-26 19:04:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-05-26 19:04:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:04:43 [main] INFO  c.p.p.PodcastalertApplication - Starting PodcastalertApplication on DESKTOP-5CV30MA with PID 14016 (C:\Users\Fozz\eclipse-workspace\podcastalert\target\classes started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:04:43 [main] INFO  c.p.p.PodcastalertApplication - No active profile set, falling back to default profiles: default
+2018-05-26 19:04:44 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42721fe: startup date [Sat May 26 19:04:43 CDT 2018]; root of context hierarchy
+2018-05-26 19:04:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:04:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:04:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-26 19:04:45 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-26 19:04:45 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-26 19:04:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-26 19:04:46 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-26 19:04:46 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-26 19:04:46 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@66deec87
+2018-05-26 19:04:46 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-26 19:04:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:04:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-26 19:04:47 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:04:47 [main] INFO  c.p.p.PodcastalertApplication - Started PodcastalertApplication in 3.691 seconds (JVM running for 4.53)
+2018-05-26 19:04:47 [main] INFO  c.p.p.PodcastalertApplication - #PodcastAlet proccess begings
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:04:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:04:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:04:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:04:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:04:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:04:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:04:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:04:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:04:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:04:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:04:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:04:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:04:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:04:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:04:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:04:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:04:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:04:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:04:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:05:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:05:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:05:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:09:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:09:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:09:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:09:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:09:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:09:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:09:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:09:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:09:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:09:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:09:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:09:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:09:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:09:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:09:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:09:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:09:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:09:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:09:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:09:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:09:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:09:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:10:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:10:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:10:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:14:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:14:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:14:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:14:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:14:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:14:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:14:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:14:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:14:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:14:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:14:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:14:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:14:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:14:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:14:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:14:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:14:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:14:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:15:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:15:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:15:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:15:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:15:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:15:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:15:03 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:15:03 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:15:03 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:19:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:19:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:19:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:19:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:19:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:19:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:19:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:19:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:19:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:19:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:19:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:19:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:19:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:19:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:19:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:19:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:19:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:20:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:20:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:20:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:20:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:20:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:20:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:20:02 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:24:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:24:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:24:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:24:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:24:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:24:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:24:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:24:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:24:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:24:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:24:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:24:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:24:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:24:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:24:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:24:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:24:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:29:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:29:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:29:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:29:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:29:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:29:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:29:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:29:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:29:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:29:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:29:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:29:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:29:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:29:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:29:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:29:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:29:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:29:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:30:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:30:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:30:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:34:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:34:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:34:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:34:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:34:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:34:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:34:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:34:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:34:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:34:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:34:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:34:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:34:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:34:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:34:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:34:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:34:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:34:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:35:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:35:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:35:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:39:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:39:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:39:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:39:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:39:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:39:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:39:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:39:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:39:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:39:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:39:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:39:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:39:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:39:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:39:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:39:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:39:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:39:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:39:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:39:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:40:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:40:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:40:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:40:01 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:44:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:44:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:44:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:44:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:44:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:44:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:44:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:44:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:44:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:44:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:44:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:44:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:44:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:44:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:44:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:44:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:44:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:44:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:44:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:44:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:44:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:44:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:49:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:49:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:49:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:49:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:49:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:49:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:49:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:49:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:49:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:49:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:49:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:49:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:49:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:49:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:49:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:49:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:49:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:49:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:49:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:49:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:54:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:54:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:54:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:54:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:54:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:54:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:54:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:54:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:54:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:54:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:54:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:54:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:54:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:54:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:54:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:54:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:54:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:54:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:54:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:54:59 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:55:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:55:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:55:00 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 19:55:43 [main] INFO  c.p.p.PodcastalertApplicationTests - Starting PodcastalertApplicationTests on DESKTOP-5CV30MA with PID 6896 (started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:55:43 [main] INFO  c.p.p.PodcastalertApplicationTests - No active profile set, falling back to default profiles: default
+2018-05-26 19:55:43 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76ba13c: startup date [Sat May 26 19:55:43 CDT 2018]; root of context hierarchy
+2018-05-26 19:55:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:55:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:55:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-26 19:55:46 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-26 19:55:46 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-26 19:55:46 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+2018-05-26 19:55:46 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-26 19:55:46 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43)
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 52 common frames omitted
+2018-05-26 19:55:46 [main] INFO  c.p.p.PodcastalertApplicationTests - Starting PodcastalertApplicationTests on DESKTOP-5CV30MA with PID 6896 (started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:55:46 [main] INFO  c.p.p.PodcastalertApplicationTests - No active profile set, falling back to default profiles: default
+2018-05-26 19:55:46 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63d5874f: startup date [Sat May 26 19:55:46 CDT 2018]; root of context hierarchy
+2018-05-26 19:55:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:55:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:55:47 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+2018-05-26 19:55:47 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-26 19:55:47 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[na:na]
+	... 51 common frames omitted
+2018-05-26 19:55:47 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@221a3fa4] to prepare test instance [com.podcazity.podcastalert.PodcastalertApplicationTests@c430e6c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[na:na]
+	... 52 common frames omitted
+2018-05-26 19:56:27 [main] INFO  c.p.p.PodcastalertApplicationTests - Starting PodcastalertApplicationTests on DESKTOP-5CV30MA with PID 12776 (started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:56:27 [main] INFO  c.p.p.PodcastalertApplicationTests - No active profile set, falling back to default profiles: default
+2018-05-26 19:56:27 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76ba13c: startup date [Sat May 26 19:56:27 CDT 2018]; root of context hierarchy
+2018-05-26 19:56:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:56:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:56:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-26 19:56:30 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-26 19:56:30 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-26 19:56:30 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+2018-05-26 19:56:30 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-26 19:56:30 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43)
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 52 common frames omitted
+2018-05-26 19:56:30 [main] INFO  c.p.p.PodcastalertApplicationTests - Starting PodcastalertApplicationTests on DESKTOP-5CV30MA with PID 12776 (started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:56:30 [main] INFO  c.p.p.PodcastalertApplicationTests - No active profile set, falling back to default profiles: default
+2018-05-26 19:56:30 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b31a708: startup date [Sat May 26 19:56:30 CDT 2018]; root of context hierarchy
+2018-05-26 19:56:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:56:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:56:31 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+2018-05-26 19:56:31 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-26 19:56:31 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[na:na]
+	... 51 common frames omitted
+2018-05-26 19:56:31 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@221a3fa4] to prepare test instance [com.podcazity.podcastalert.PodcastalertApplicationTests@c430e6c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:179) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:149) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:54) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[na:na]
+	... 52 common frames omitted
+2018-05-26 19:59:25 [main] INFO  c.p.p.PodcastalertApplicationTests - Starting PodcastalertApplicationTests on DESKTOP-5CV30MA with PID 7544 (started by Fozz in C:\Users\Fozz\eclipse-workspace\podcastalert)
+2018-05-26 19:59:25 [main] INFO  c.p.p.PodcastalertApplicationTests - No active profile set, falling back to default profiles: default
+2018-05-26 19:59:25 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e16b8b5: startup date [Sat May 26 19:59:25 CDT 2018]; root of context hierarchy
+2018-05-26 19:59:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:59:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-26 19:59:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-26 19:59:28 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-26 19:59:28 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-26 19:59:28 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-26 19:59:28 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-26 19:59:28 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-26 19:59:28 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7412a438
+2018-05-26 19:59:29 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-26 19:59:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:59:30 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-26 19:59:30 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:59:30 [main] INFO  c.p.p.PodcastalertApplicationTests - Started PodcastalertApplicationTests in 5.69 seconds (JVM running for 6.831)
+2018-05-26 19:59:30 [pool-2-thread-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-26 19:59:30 [Thread-2] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e16b8b5: startup date [Sat May 26 19:59:25 CDT 2018]; root of context hierarchy
+2018-05-26 19:59:30 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-26 19:59:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Getting all podcasts
+2018-05-26 19:59:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Inmamables feed
+2018-05-26 19:59:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Inmamables -> 0
+2018-05-26 19:59:47 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comicverso feed
+2018-05-26 19:59:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comicverso -> 0
+2018-05-26 19:59:48 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Freak Noob News feed
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Freak Noob News -> 0
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comikaze feed
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comikaze -> 0
+2018-05-26 19:59:49 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading D-Strip-Ando feed
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for D-Strip-Ando -> 0
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Cómic Manía feed
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Cómic Manía -> 0
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Los Forasteros feed
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Los Forasteros -> 0
+2018-05-26 19:59:50 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Tribunal de los Superweyes feed
+2018-05-26 19:59:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Tribunal de los Superweyes -> 0
+2018-05-26 19:59:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Nerdulería feed
+2018-05-26 19:59:51 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Nerdulería -> 0
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading La Cueva Del Nerd feed
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for La Cueva Del Nerd -> 0
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Atomix Podcast feed
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Atomix Podcast -> 0
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Sayonara Podcast feed
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Sayonara Podcast -> 0
+2018-05-26 19:59:52 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El FrikiPodcast feed
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El FrikiPodcast -> 0
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Comic Geekos feed
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Comic Geekos -> 0
+2018-05-26 19:59:53 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Café Comiquero feed
+2018-05-26 19:59:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Café Comiquero -> 0
+2018-05-26 19:59:54 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Capitán Pada feed
+2018-05-26 19:59:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Capitán Pada -> 0
+2018-05-26 19:59:55 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Persona No Sekai feed
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Persona No Sekai -> 0
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading Desde Abajo feed
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for Desde Abajo -> 0
+2018-05-26 19:59:56 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading EngelCast Alive! feed
+2018-05-26 19:59:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for EngelCast Alive! -> 0
+2018-05-26 19:59:57 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Downloading El Pasquín feed
+2018-05-26 19:59:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Reading files
+2018-05-26 19:59:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - New tracks for El Pasquín -> 0
+2018-05-26 19:59:58 [pool-2-thread-1] INFO  c.p.p.component.PodcastAlertTask - Closing #PodcastAlert proccess
+
+2018-05-26 20:02:08 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-05-26 20:02:08 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42721fe: startup date [Sat May 26 19:04:43 CDT 2018]; root of context hierarchy
+2018-05-26 20:02:08 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-05-26 20:02:08 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
