@@ -25,6 +25,8 @@ public class FeedBurner extends Reader {
 			Attributes attributes) throws SAXException {
 		if(qName.equalsIgnoreCase("item")){
 			track = new Track();
+        } else if(qName.equals("feedburner:origLink") && track != null) {
+        	link = true;
         } else if(qName.equalsIgnoreCase("feedburner:origEnclosureLink")){
         	location = true;
         } else if(qName.equals("enclosure")){

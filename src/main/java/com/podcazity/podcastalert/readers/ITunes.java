@@ -30,10 +30,12 @@ public class ITunes extends Reader {
         	date = true;
         } else if(qName.equals("link") && track != null) {
         	link = true;
+        } else if(qName.equalsIgnoreCase("atom:link") && track != null){
+    		track.setTrackPage(attributes.getValue("url"));
+			link = false;
         } else if(qName.equalsIgnoreCase("title") && track != null){
             title = true;
         }
-		
 	}
 
 	@Override
