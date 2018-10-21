@@ -8,4 +8,5 @@ import com.podcazity.podcastalert.model.Podcast;
 
 public interface PodcastRepository extends CrudRepository<Podcast, Integer>{
 	List<Podcast> findAll();
+	List<Podcast> findByPodcastActive(boolean active);
 }

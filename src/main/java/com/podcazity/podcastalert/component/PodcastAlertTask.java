@@ -35,7 +35,8 @@ public class PodcastAlertTask {
 	@Resource
 	private FacebookRepository facebookRepository;
 	
-	@Resource CreateXspfRepository createXspfRepository;
+	@Resource 
+	private CreateXspfRepository createXspfRepository;
 	
 	private static final Logger logger = LoggerFactory.getLogger(PodcastAlertTask.class);
 	
@@ -43,7 +44,7 @@ public class PodcastAlertTask {
 	public void runTask() {
 		Date lastAct = new Date();
 		logger.info("Getting all podcasts");
-		for(Podcast p : podcastRepository.findAll()){
+		for(Podcast p : podcastRepository.findByPodcastActive(true)){
 			logger.info("Downloading " + p.getPodcastName() +  " feed");
 			downloadFeedRepository.downloadFile(p.getPodcastFeed(),
 					p.getPodcastXmlFileName());
@@ -63,8 +64,5 @@ public class PodcastAlertTask {
 		logger.info("Closing #PodcastAlert proccess\n");
 //		createXspfRepository.buildFile();
 //		//uploadService.uploadFile();
-		/*
-			
-		*/
 	}
 }

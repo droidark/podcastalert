@@ -21,6 +21,7 @@ import javax.persistence.Table;
 public class Podcast {
 	private Integer podcastId;
 	private Podcaster podcaster;
+	private Network network;
 	private String podcastArtWork;
 	private String podcastUrl;
 	private String podcastDescription;
@@ -32,6 +33,7 @@ public class Podcast {
 	private String podcastTwitter;
 	private String podcastFacebook;
 	private String podcastName;
+	private boolean podcastActive;
 	private Set<Track> tracks = new HashSet<>();
 	
 	@Id
@@ -45,7 +47,7 @@ public class Podcast {
 	}
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "podcaster_id", nullable = false)
+	@JoinColumn(name = "podcaster_id", nullable = true)
 	public Podcaster getPodcaster() {
 		return podcaster;
 	}
@@ -53,6 +55,14 @@ public class Podcast {
 		this.podcaster = podcaster;
 	}
 	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "network_id", nullable = true)
+	public Network getNetwork() {
+		return network;
+	}
+	public void setNetwork(Network network) {
+		this.network = network;
+	}
 	@Column(name = "podcast_artwork")
 	public String getPodcastArtWork() {
 		return podcastArtWork;
@@ -139,6 +149,14 @@ public class Podcast {
 	}
 	public void setPodcastName(String podcastName) {
 		this.podcastName = podcastName;
+	}
+	
+	@Column(name = "podcast_active")
+	public boolean isPodcastActive() {
+		return podcastActive;
+	}
+	public void setPodcastActive(boolean podcastActive) {
+		this.podcastActive = podcastActive;
 	}
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "podcast", cascade = CascadeType.ALL)

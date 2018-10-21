@@ -1,7 +1,5 @@
 package com.podcazity.podcastalert.repository.impl;
 
-import java.io.File;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
@@ -21,18 +19,16 @@ public class TwitterRepositoryImpl implements TwitterRepository{
 
 	@Override
 	public void sendTweet(Podcast podcast) {
+		String url = "", tweet = "";
 		try {
 			TwitterFactory factory = new TwitterFactory();
 			Twitter twitter = factory.getInstance();
-			
 			for(Track t : podcast.getTracks()) {
-				logger.info("Sending tweet: #PodcastAlert " + t.getTrackTitle() + " " 
-			+ t.getTrackPage() + " vía " + podcast.getPodcastTwitter());
-				StatusUpdate status = new StatusUpdate("#PodcastAlert " + 
-				t.getTrackTitle() + " " + 
-				t.getTrackPage() + " vía " + 
-				podcast.getPodcastTwitter() + " ");
-				// Put podcast conver in tweet
+				url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
+				tweet = "#PodcastAlert " + t.getTrackTitle() + url + " vía " + podcast.getPodcastTwitter();
+				logger.info("Sending tweet: " + tweet);
+				StatusUpdate status = new StatusUpdate(tweet);
+				// Put podcast cover in tweet
 				//status.setMedia(new File(podcast.getPodcastArtWork()));
 				twitter.updateStatus(status);
 			}
