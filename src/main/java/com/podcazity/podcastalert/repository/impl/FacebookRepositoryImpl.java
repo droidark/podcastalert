@@ -31,13 +31,14 @@ public class FacebookRepositoryImpl implements FacebookRepository {
 
 	@Override
 	public void publishLink(Podcast podcast) {
-		String url = "";
+		String url = "", network = "";
 		try {
 			fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_3_0);
 			for(Track t : podcast.getTracks()) {
 				url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
+				network = podcast.getNetwork() == null ? "" : " " + podcast.getNetwork().getNetworkFacebook();
 				logger.info("Sending Facebook post: #PodcastAlert " + t.getTrackTitle() + url + " vía " 
-				+ podcast.getPodcastFacebook());
+				+ podcast.getPodcastFacebook() + " " + network);
 				fbClient.publish(pageId + "/feed", FacebookType.class, 
 				Parameter.with(
 						"link", 
@@ -46,7 +47,7 @@ public class FacebookRepositoryImpl implements FacebookRepository {
 						"message", 
 						"#PodcastAlert " + 
 						t.getTrackTitle() + 
-						" vía " + podcast.getPodcastFacebook()));
+						" vía " + podcast.getPodcastFacebook() + " " + network));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

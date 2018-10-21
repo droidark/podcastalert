@@ -19,13 +19,14 @@ public class TwitterRepositoryImpl implements TwitterRepository{
 
 	@Override
 	public void sendTweet(Podcast podcast) {
-		String url = "", tweet = "";
+		String url = "", tweet = "", network = "";
 		try {
 			TwitterFactory factory = new TwitterFactory();
 			Twitter twitter = factory.getInstance();
 			for(Track t : podcast.getTracks()) {
 				url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
-				tweet = "#PodcastAlert " + t.getTrackTitle() + url + " vía " + podcast.getPodcastTwitter();
+				network = podcast.getNetwork() == null ? "" : " " + podcast.getNetwork().getNetworkTwitter();
+				tweet = "#PodcastAlert " + t.getTrackTitle() + " " + url + " vía " + podcast.getPodcastTwitter() + network;
 				logger.info("Sending tweet: " + tweet);
 				StatusUpdate status = new StatusUpdate(tweet);
 				// Put podcast cover in tweet
