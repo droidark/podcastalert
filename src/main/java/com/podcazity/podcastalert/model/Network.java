@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pdz_network")
+@Table(name = "pdz_networks")
 public class Network {
 	private Integer networkId;
 	private String networkName;
