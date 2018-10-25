@@ -37,7 +37,7 @@ public class FacebookRepositoryImpl implements FacebookRepository {
 			for(Track t : podcast.getTracks()) {
 				url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
 				network = podcast.getNetwork() == null ? "" : " " + podcast.getNetwork().getNetworkFacebook();
-				logger.info("Sending Facebook post: #PodcastAlert " + t.getTrackTitle() + url + " vía " 
+				logger.info("Sending Facebook post: #PodcastAlert " + t.getTrackTitle() + " " + url + " vía " 
 				+ podcast.getPodcastFacebook() + " " + network);
 				fbClient.publish(pageId + "/feed", FacebookType.class, 
 				Parameter.with(
