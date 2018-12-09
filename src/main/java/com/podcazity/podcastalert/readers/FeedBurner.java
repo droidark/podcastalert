@@ -42,7 +42,7 @@ public class FeedBurner extends Reader {
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException{
 		if(title){
-            track.setTrackTitle((new String(ch, start, length)));
+            track.setTrackTitle((new String(ch, start, length).replace("&quot;", "\"")));
             title = false;
         } else if(link) {
         	track.setTrackPage((new String(ch, start, length)));
