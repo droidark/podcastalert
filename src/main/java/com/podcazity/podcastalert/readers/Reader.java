@@ -11,49 +11,49 @@ import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 
 public abstract class Reader extends DefaultHandler {
-	
-	boolean identifier;
+
+    boolean identifier;
     boolean title;
     boolean annotation;
     boolean image;
     boolean trackNum;
     boolean date;
     boolean link;
-    
+
     Set<Track> trackList = new HashSet<Track>();
     Track track;
-	
-	Podcast podcast;
-	
-	public Reader(Podcast podcast) {
-		this.podcast = podcast;
-	}
-	
-	public Set<Track> getTrackList() {
-		return trackList;
-	}
-	
-	public abstract void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException;
-	
-	public void endElement(String uri, String localName, String qName) 
-			throws SAXException {
-		if(qName.equalsIgnoreCase("item") 
-				&& track.getTrackDate().after(podcast.getPodcastLastAct())) {
-			track.setPodcast(podcast);
-            
-			boolean b = true;
-			for(Track t : trackList) {
-				if(t.getTrackLocation().equals(track.getTrackLocation())) {
-					b = false;
-				}
-			}
-			
-			if(b) {
-				trackList.add(track);
-			}
-			
-        }		
-	}
-	
-	public abstract void characters(char ch[], int start, int length) throws SAXException;
+
+    Podcast podcast;
+
+    public Reader(Podcast podcast) {
+        this.podcast = podcast;
+    }
+
+    public Set<Track> getTrackList() {
+        return trackList;
+    }
+
+    public abstract void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException;
+
+    public void endElement(String uri, String localName, String qName)
+            throws SAXException {
+        if(qName.equalsIgnoreCase("item")
+                && track.getTrackDate().after(podcast.getPodcastLastAct())) {
+            track.setPodcast(podcast);
+
+            boolean b = true;
+            for(Track t : trackList) {
+                if(t.getTrackLocation().equals(track.getTrackLocation())) {
+                    b = false;
+                }
+            }
+
+            if(b) {
+                trackList.add(track);
+            }
+
+        }
+    }
+
+    public abstract void characters(char ch[], int start, int length) throws SAXException;
 }

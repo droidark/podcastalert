@@ -14,28 +14,28 @@ import twitter4j.TwitterFactory;
 
 @Repository("twitterRepository")
 public class TwitterRepositoryImpl implements TwitterRepository{
-	
-	private static final Logger logger = LoggerFactory.getLogger(TwitterRepositoryImpl.class);
 
-	@Override
-	public void sendTweet(Podcast podcast) {
-		String url = "", tweet = "", network = "";
-		try {
-			TwitterFactory factory = new TwitterFactory();
-			Twitter twitter = factory.getInstance();
-			for(Track t : podcast.getTracks()) {
-				url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
-				network = podcast.getNetwork() == null ? "" : " " + podcast.getNetwork().getNetworkTwitter();
-				tweet = "#PodcastAlert " + t.getTrackTitle() + " " + url + " vía " + podcast.getPodcastTwitter() + network;
-				logger.info("Sending tweet: " + tweet);
-				StatusUpdate status = new StatusUpdate(tweet);
-				// Put podcast cover in tweet
-				//status.setMedia(new File(podcast.getPodcastArtWork()));
-				twitter.updateStatus(status);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}		
-	}
+    private static final Logger logger = LoggerFactory.getLogger(TwitterRepositoryImpl.class);
+
+    @Override
+    public void sendTweet(Podcast podcast) {
+        String url = "", tweet = "", network = "";
+        try {
+            TwitterFactory factory = new TwitterFactory();
+            Twitter twitter = factory.getInstance();
+            for(Track t : podcast.getTracks()) {
+                url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
+                network = podcast.getNetwork() == null ? "" : " " + podcast.getNetwork().getNetworkTwitter();
+                tweet = "#PodcastAlert " + t.getTrackTitle() + " " + url + " vía " + podcast.getPodcastTwitter() + network;
+                logger.info("Sending tweet: " + tweet);
+                StatusUpdate status = new StatusUpdate(tweet);
+                // Put podcast cover in tweet
+                //status.setMedia(new File(podcast.getPodcastArtWork()));
+                twitter.updateStatus(status);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }

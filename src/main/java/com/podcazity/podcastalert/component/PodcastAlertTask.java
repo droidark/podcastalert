@@ -19,50 +19,50 @@ import com.podcazity.podcastalert.repository.TwitterRepository;
 
 @Component
 public class PodcastAlertTask {
-	
-	@Resource
-	private PodcastRepository podcastRepository;
-	
-	@Resource
-	private DownloadFeedRepository downloadFeedRepository;
-	
-	@Resource
-	private ReadFeedRepository readFeedRepository;
-	
-	@Resource 
-	private TwitterRepository twitterRepository;
-	
-	@Resource
-	private FacebookRepository facebookRepository;
-	
-	@Resource 
-	private CreateXspfRepository createXspfRepository;
-	
-	private static final Logger logger = LoggerFactory.getLogger(PodcastAlertTask.class);
-	
-	@Scheduled(fixedRate = 300000)
-	public void runTask() {
-		Date lastAct = new Date();
-		logger.info("Getting all podcasts");
-		for(Podcast p : podcastRepository.findByPodcastActive(true)){
-			logger.info("Downloading " + p.getPodcastName() +  " feed");
-			downloadFeedRepository.downloadFile(p.getPodcastFeed(),
-					p.getPodcastXmlFileName());
-			logger.info("Reading files");
-			readFeedRepository.LoadHandler(p);
-			p.setTracks(readFeedRepository.createTracks());
-			logger.info("New tracks for " + p.getPodcastName() + " -> " + p.getTracks().size());
-			twitterRepository.sendTweet(p);
-			facebookRepository.publishLink(p);
-			if(!p.getTracks().isEmpty()) {
-				logger.info("Updating date");
-				p.setPodcastLastAct(lastAct);
-				logger.info("Saving new tracks into database");
-				podcastRepository.save(p);
-			}
-		}
-		logger.info("Closing #PodcastAlert proccess\n");
+
+    @Resource
+    private PodcastRepository podcastRepository;
+
+    @Resource
+    private DownloadFeedRepository downloadFeedRepository;
+
+    @Resource
+    private ReadFeedRepository readFeedRepository;
+
+    @Resource
+    private TwitterRepository twitterRepository;
+
+    @Resource
+    private FacebookRepository facebookRepository;
+
+    @Resource
+    private CreateXspfRepository createXspfRepository;
+
+    private static final Logger logger = LoggerFactory.getLogger(PodcastAlertTask.class);
+
+    @Scheduled(fixedRate = 300000)
+    public void runTask() {
+        Date lastAct = new Date();
+        logger.info("Getting all podcasts");
+        for(Podcast p : podcastRepository.findByPodcastActive(true)){
+            logger.info("Downloading " + p.getPodcastName() +  " feed");
+            downloadFeedRepository.downloadFile(p.getPodcastFeed(),
+                    p.getPodcastXmlFileName());
+            logger.info("Reading files");
+            readFeedRepository.LoadHandler(p);
+            p.setTracks(readFeedRepository.createTracks());
+            logger.info("New tracks for " + p.getPodcastName() + " -> " + p.getTracks().size());
+            twitterRepository.sendTweet(p);
+            facebookRepository.publishLink(p);
+            if(!p.getTracks().isEmpty()) {
+                logger.info("Updating date");
+                p.setPodcastLastAct(lastAct);
+                logger.info("Saving new tracks into database");
+                podcastRepository.save(p);
+            }
+        }
+        logger.info("Closing #PodcastAlert proccess\n");
 //		createXspfRepository.buildFile();
 //		//uploadService.uploadFile();
-	}
+    }
 }

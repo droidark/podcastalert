@@ -18,31 +18,31 @@ import com.podcazity.podcastalert.repository.ReadFeedRepository;
 @Repository("readFeedRepository")
 public class ReadFeedRepositoryImpl implements ReadFeedRepository{
 
-	private Reader handler;
-	private Podcast podcast;
-	private SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
-	
-	@Override
-	public void LoadHandler(Podcast podcast) {
-		this.podcast = podcast;
-		if(podcast.getPodcastReader().equals("FeedBurner")){
-			handler = new FeedBurner(podcast);
-		} else if(podcast.getPodcastReader().equals("ITunes")) {
-			handler = new ITunes(podcast);
-		}
-	}
+    private Reader handler;
+    private Podcast podcast;
+    private SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
 
-	@Override
-	public Set<Track> createTracks() {
-		Set<Track> trackList = null;
-		try {
-			SAXParser saxParser = saxParserFactory.newSAXParser();
-			saxParser.parse(new File("xml\\" + podcast.getPodcastXmlFileName()), handler);
-			trackList = handler.getTrackList();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return trackList;
-	}
+    @Override
+    public void LoadHandler(Podcast podcast) {
+        this.podcast = podcast;
+        if(podcast.getPodcastReader().equals("FeedBurner")){
+            handler = new FeedBurner(podcast);
+        } else if(podcast.getPodcastReader().equals("ITunes")) {
+            handler = new ITunes(podcast);
+        }
+    }
+
+    @Override
+    public Set<Track> createTracks() {
+        Set<Track> trackList = null;
+        try {
+            SAXParser saxParser = saxParserFactory.newSAXParser();
+            saxParser.parse(new File("xml\\" + podcast.getPodcastXmlFileName()), handler);
+            trackList = handler.getTrackList();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return trackList;
+    }
 
 }

@@ -5,6 +5,6 @@ import java.util.List;
 import com.podcazity.podcastalert.model.Track;
 
 public interface CreateXspfRepository {
-	List<Track> getLastetTracks();
-	void buildFile();
+    List<Track> getLastetTracks();
+    void buildFile();
 }

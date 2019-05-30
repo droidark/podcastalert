@@ -9,12 +9,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 public class PodcastalertApplication {
-	
-	private static final Logger logger = LoggerFactory.getLogger(PodcastalertApplication.class);
-	
-	public static void main(String[] args) {
-		SpringApplication.run(PodcastalertApplication.class, args);
-		logger.info("#PodcastAlet proccess begings");
-	}
+
+    private static final Logger logger = LoggerFactory.getLogger(PodcastalertApplication.class);
+
+    public static void main(String[] args) {
+        SpringApplication.run(PodcastalertApplication.class, args);
+        logger.info("#PodcastAlet proccess begings");
+    }
 
 }
