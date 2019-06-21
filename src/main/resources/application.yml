@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        enable_lazy_load_no_trans: true
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    show-sql: false
+  datasource:
+    url: [db-url]
+    username: [db-username]
+    password: [db-password]
+logging:
+  level:
+    org.springframework.web: ERROR
+    net.virux: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: [log-name]
+restfb:
+  pageAccessToken: [page-access-token]
+  pageId: [page-id]
+ftp:
+  server: [server]
+  user: [user]
+  password: [password]
+  origin: [origin]
+  destination: [destination]

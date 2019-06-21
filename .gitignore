@@ -6,6 +6,3 @@ images.rar
 queries.sql
 log/*
 .idea/*
-src/main/resources/application.yml
-src/main/resources/restfb.properties
-src/main/resources/twitter4j.properties
