@@ -1,9 +1,14 @@
-package com.podcazity.podcastalert.repository.impl;
+package com.podcazity.podcastalert.service.impl;
 
-import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.List;
+import com.podcazity.podcastalert.model.Track;
+import com.podcazity.podcastalert.repository.TrackRepository;
+import com.podcazity.podcastalert.service.CreateXspfService;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.w3c.dom.Attr;
+import org.w3c.dom.CDATASection;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 import javax.annotation.Resource;
 import javax.xml.parsers.DocumentBuilder;
@@ -12,21 +17,12 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.List;
 
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort.Direction;
-import org.springframework.stereotype.Repository;
-import org.w3c.dom.Attr;
-import org.w3c.dom.CDATASection;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-
-import com.podcazity.podcastalert.model.Track;
-import com.podcazity.podcastalert.repository.CreateXspfRepository;
-import com.podcazity.podcastalert.repository.TrackRepository;
-
-@Repository("createXspfRepository")
-public class CreateXspfImpl implements CreateXspfRepository{
+public class CreateXspfServiceImpl implements CreateXspfService {
 
     @Resource
     private TrackRepository trackRepository;
@@ -34,7 +30,7 @@ public class CreateXspfImpl implements CreateXspfRepository{
     @Override
     public List<Track> getLastetTracks() {
         return trackRepository
-                .findAll(new PageRequest(0, 100, Direction.DESC, "trackDate"))
+                .findAll(PageRequest.of(0, 100, Sort.Direction.DESC, "trackDate"))
                 .getContent();
     }
 
@@ -134,5 +130,4 @@ public class CreateXspfImpl implements CreateXspfRepository{
             e.printStackTrace();
         }
     }
-
 }

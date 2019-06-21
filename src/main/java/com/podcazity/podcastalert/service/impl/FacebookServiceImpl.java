@@ -1,23 +1,20 @@
-package com.podcazity.podcastalert.repository.impl;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Repository;
+package com.podcazity.podcastalert.service.impl;
 
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
-import com.podcazity.podcastalert.repository.FacebookRepository;
+import com.podcazity.podcastalert.service.SocialNetworkService;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.Parameter;
 import com.restfb.Version;
 import com.restfb.types.FacebookType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
-@Repository("facebookRepository")
-@PropertySource(value = {"classpath:restfb.properties"})
-public class FacebookRepositoryImpl implements FacebookRepository {
+@Service("facebookService")
+public class FacebookServiceImpl implements SocialNetworkService {
 
     @Value("${restfb.pageAccessToken}")
     private String pageAccessToken;
@@ -25,13 +22,13 @@ public class FacebookRepositoryImpl implements FacebookRepository {
     @Value("${restfb.pageId}")
     private String pageId;
 
-    private static final Logger logger = LoggerFactory.getLogger(FacebookRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(FacebookServiceImpl.class);
 
     private FacebookClient fbClient;
 
     @Override
     public void publishLink(Podcast podcast) {
-        String url = "", network = "";
+        String url, network;
         try {
             fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_3_2);
             for(Track t : podcast.getTracks()) {
