@@ -8,13 +8,13 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class PodcastalertApplication {
+public class PodcastAlertApplication {
 
-    private static final Logger logger = LoggerFactory.getLogger(PodcastalertApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(PodcastAlertApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(PodcastalertApplication.class, args);
-        logger.info("#PodcastAlet proccess begings");
+        SpringApplication.run(PodcastAlertApplication.class, args);
+        logger.info("#PodcastAlet process begins");
     }
 
 }

@@ -1,5 +1,8 @@
 package com.podcazity.podcastalert.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -14,109 +17,45 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pdz_tracks")
+@Getter
+@Setter
 public class Track {
-    private Integer trackId;
-    private Podcast podcast;
-    private String trackLocation;
-    private String trackIdentifier;
-    private String trackTitle;
-    private String trackAnnotation;
-    private String trackImage;
-    private Integer trackTrackNum;
-    private Integer trackDuration;
-    private Date trackDate;
-    private String trackPage;
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "track_id")
-    public Integer getTrackId() {
-        return trackId;
-    }
-    public void setTrackId(Integer trackId) {
-        this.trackId = trackId;
-    }
+    private Integer trackId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "podcast_id", nullable = false)
-    public Podcast getPodcast() {
-        return podcast;
-    }
-    public void setPodcast(Podcast podcast) {
-        this.podcast = podcast;
-    }
+    private Podcast podcast;
 
     @Column(name = "track_location")
-    public String getTrackLocation() {
-        return trackLocation;
-    }
-    public void setTrackLocation(String trackLocation) {
-        this.trackLocation = trackLocation;
-    }
+    private String trackLocation;
 
     @Column(name = "track_identifier")
-    public String getTrackIdentifier() {
-        return trackIdentifier;
-    }
-    public void setTrackIdentifier(String trackIdentifier) {
-        this.trackIdentifier = trackIdentifier;
-    }
+    private String trackIdentifier;
 
     @Column(name = "track_title")
-    public String getTrackTitle() {
-        return trackTitle;
-    }
-    public void setTrackTitle(String trackTitle) {
-        this.trackTitle = trackTitle;
-    }
+    private String trackTitle;
 
     @Column(name = "track_annotation")
-    public String getTrackAnnotation() {
-        return trackAnnotation;
-    }
-    public void setTrackAnnotation(String trackAnnotation) {
-        this.trackAnnotation = trackAnnotation;
-    }
+    private String trackAnnotation;
 
     @Column(name = "track_image")
-    public String getTrackImage() {
-        return trackImage;
-    }
-    public void setTrackImage(String trackImage) {
-        this.trackImage = trackImage;
-    }
+    private String trackImage;
 
     @Column(name = "track_tracknum")
-    public Integer getTrackTrackNum() {
-        return trackTrackNum;
-    }
-    public void setTrackTrackNum(Integer trackTrackNum) {
-        this.trackTrackNum = trackTrackNum;
-    }
+    private Integer trackTrackNum;
 
     @Column(name = "track_duration")
-    public Integer getTrackDuration() {
-        return trackDuration;
-    }
-    public void setTrackDuration(Integer trackDuration) {
-        this.trackDuration = trackDuration;
-    }
+    private Integer trackDuration;
 
     @Column(name = "track_date")
-    public Date getTrackDate() {
-        return trackDate;
-    }
-    public void setTrackDate(Date trackDate) {
-        this.trackDate = trackDate;
-    }
+    private Date trackDate;
 
     @Column(name = "track_page")
-    public String getTrackPage() {
-        return trackPage;
-    }
-    public void setTrackPage(String trackPage) {
-        this.trackPage = trackPage;
-    }
+    private String trackPage;
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -134,12 +73,7 @@ public class Track {
             return false;
         Track other = (Track) obj;
         if (trackLocation == null) {
-            if (other.trackLocation != null)
-                return false;
-        } else if (!trackLocation.equals(other.trackLocation))
-            return false;
-        return true;
+            return other.trackLocation == null;
+        } else return trackLocation.equals(other.trackLocation);
     }
-
-
 }

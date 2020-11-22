@@ -48,8 +48,8 @@ public class PodcastAlertServiceImpl implements PodcastAlertService {
             readFeedService.LoadHandler(p);
             p.setTracks(readFeedService.createTracks());
             logger.info("New tracks for " + p.getPodcastName() + " -> " + p.getTracks().size());
-            twitterService.publishLink(p);
-            facebookService.publishLink(p);
+//            twitterService.publishLink(p);
+//            facebookService.publishLink(p);
             if(!p.getTracks().isEmpty()) {
                 logger.info("Updating date");
                 p.setPodcastLastAct(lastAct);
@@ -57,6 +57,6 @@ public class PodcastAlertServiceImpl implements PodcastAlertService {
                 podcastRepository.save(p);
             }
         });
-        logger.info("Closing #PodcastAlert proccess\n");
+        logger.info("Closing #PodcastAlert process\n");
     }
 }

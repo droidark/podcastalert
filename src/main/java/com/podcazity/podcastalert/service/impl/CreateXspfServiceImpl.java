@@ -28,7 +28,7 @@ public class CreateXspfServiceImpl implements CreateXspfService {
     private TrackRepository trackRepository;
 
     @Override
-    public List<Track> getLastetTracks() {
+    public List<Track> getLatestTracks() {
         return trackRepository
                 .findAll(PageRequest.of(0, 100, Sort.Direction.DESC, "trackDate"))
                 .getContent();
@@ -64,7 +64,7 @@ public class CreateXspfServiceImpl implements CreateXspfService {
             //	title -> playlist
             playlist.appendChild(title);
 
-            for(Track t : getLastetTracks()){
+            for(Track t : getLatestTracks()){
                 //	playlist -> trackList -> track
                 Element track = doc.createElement("track");
                 CDATASection cdata;

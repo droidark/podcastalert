@@ -1,5 +1,8 @@
 package com.podcazity.podcastalert.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,61 +17,26 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pdz_podcasters")
+@Getter
+@Setter
 public class Podcaster {
-    private Integer podcasterId;
-    private String podcasterName;
-    private String podcasterUrl;
-    private String podcasterShortDescription;
-    private String podcasterAvatar;
-    private Set<Podcast> podcasts = new HashSet<>();
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "podcaster_id")
-    public Integer getPodcasterId() {
-        return podcasterId;
-    }
-    public void setPodcasterId(Integer podcasterId) {
-        this.podcasterId = podcasterId;
-    }
+    private Integer podcasterId;
 
     @Column(name = "podcaster_name")
-    public String getPodcasterName() {
-        return podcasterName;
-    }
-    public void setPodcasterName(String podcasterName) {
-        this.podcasterName = podcasterName;
-    }
+    private String podcasterName;
 
     @Column(name = "podcaster_url")
-    public String getPodcasterUrl() {
-        return podcasterUrl;
-    }
-    public void setPodcasterUrl(String podcasterUrl) {
-        this.podcasterUrl = podcasterUrl;
-    }
+    private String podcasterUrl;
 
     @Column(name = "podcaster_short_description")
-    public String getPodcasterShortDescription() {
-        return podcasterShortDescription;
-    }
-    public void setPodcasterShortDescription(String podcasterShortDescription) {
-        this.podcasterShortDescription = podcasterShortDescription;
-    }
+    private String podcasterShortDescription;
 
     @Column(name = "podcaster_avatar")
-    public String getPodcasterAvatar() {
-        return podcasterAvatar;
-    }
-    public void setPodcasterAvatar(String podcasterAvatar) {
-        this.podcasterAvatar = podcasterAvatar;
-    }
+    private String podcasterAvatar;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "podcaster")
-    public Set<Podcast> getPodcasts() {
-        return podcasts;
-    }
-    public void setPodcasts(Set<Podcast> podcasts) {
-        this.podcasts = podcasts;
-    }
+    private Set<Podcast> podcasts = new HashSet<>();
 }

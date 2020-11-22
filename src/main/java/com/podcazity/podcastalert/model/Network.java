@@ -1,5 +1,8 @@
 package com.podcazity.podcastalert.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,70 +17,29 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pdz_networks")
+@Getter
+@Setter
 public class Network {
-    private Integer networkId;
-    private String networkName;
-    private String networkDescription;
-    private String networkUrl;
-    private String networkTwitter;
-    private String networkFacebook;
-    private Set<Podcast> podcasts = new HashSet<>();
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "network_id")
-    public Integer getNetworkId() {
-        return networkId;
-    }
-    public void setNetworkId(Integer networkId) {
-        this.networkId = networkId;
-    }
+    private Integer networkId;
 
     @Column(name = "network_name")
-    public String getNetworkName() {
-        return networkName;
-    }
-    public void setNetworkName(String networkName) {
-        this.networkName = networkName;
-    }
+    private String networkName;
 
     @Column(name = "network_description")
-    public String getNetworkDescription() {
-        return networkDescription;
-    }
-    public void setNetworkDescription(String networkDescription) {
-        this.networkDescription = networkDescription;
-    }
+    private String networkDescription;
 
     @Column(name = "network_url")
-    public String getNetworkUrl() {
-        return networkUrl;
-    }
-    public void setNetworkUrl(String networkUrl) {
-        this.networkUrl = networkUrl;
-    }
+    private String networkUrl;
 
     @Column(name = "network_twitter")
-    public String getNetworkTwitter() {
-        return networkTwitter;
-    }
-    public void setNetworkTwitter(String networkTwitter) {
-        this.networkTwitter = networkTwitter;
-    }
+    private String networkTwitter;
 
     @Column(name = "network_facebook")
-    public String getNetworkFacebook() {
-        return networkFacebook;
-    }
-    public void setNetworkFacebook(String networkFacebook) {
-        this.networkFacebook = networkFacebook;
-    }
+    private String networkFacebook;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "network")
-    public Set<Podcast> getPodcasts() {
-        return podcasts;
-    }
-    public void setPodcasts(Set<Podcast> podcasts) {
-        this.podcasts = podcasts;
-    }
+    private Set<Podcast> podcasts = new HashSet<>();
 }
