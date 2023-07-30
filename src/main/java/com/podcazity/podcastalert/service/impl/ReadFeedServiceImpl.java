@@ -6,6 +6,7 @@ import com.podcazity.podcastalert.readers.FeedBurner;
 import com.podcazity.podcastalert.readers.ITunes;
 import com.podcazity.podcastalert.readers.Reader;
 import com.podcazity.podcastalert.service.ReadFeedService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.xml.parsers.SAXParser;
@@ -13,6 +14,7 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.util.Set;
 
+@Slf4j
 @Service
 public class ReadFeedServiceImpl implements ReadFeedService {
     private Reader handler;
@@ -37,7 +39,7 @@ public class ReadFeedServiceImpl implements ReadFeedService {
             saxParser.parse(new File("xml\\" + podcast.getPodcastXmlFileName()), handler);
             trackList = handler.getTrackList();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Three was a problem reading the XML " + e.getMessage());
         }
         return trackList;
     }

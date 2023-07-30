@@ -4,14 +4,18 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
+import com.podcazity.podcastalert.util.Utilities;
+import lombok.extern.slf4j.Slf4j;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
 import com.podcazity.podcastalert.model.Podcast;
 import com.podcazity.podcastalert.model.Track;
 
+@Slf4j
 public class ITunes extends Reader {
 
     public ITunes(Podcast podcast) {
@@ -47,16 +51,8 @@ public class ITunes extends Reader {
             track.setTrackPage((new String(ch, start, length)));
             link = false;
         } else if(date) {
-            try {
-                DateFormat formatter =
-                        new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz",
-                                Locale.ENGLISH);
-                Date pubDate = formatter.parse(new String(ch, start, length));
-                track.setTrackDate(pubDate);
-                date = false;
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            track.setTrackDate(Utilities.dateFormatting(new String(ch, start, length)));
+            date = false;
         }
     }
 

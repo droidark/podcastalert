@@ -30,7 +30,7 @@ public class FacebookServiceImpl implements SocialNetworkService {
     public void publishLink(Podcast podcast) {
         String url, network;
         try {
-            fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_8_0);
+            fbClient = new DefaultFacebookClient(pageAccessToken, Version.VERSION_12_0);
             for(Track t : podcast.getTracks()) {
                 url = t.getTrackPage() == null ? t.getTrackLocation() : t.getTrackPage();
                 network = podcast.getNetwork() == null ? "" : podcast.getNetwork().getNetworkFacebook();
